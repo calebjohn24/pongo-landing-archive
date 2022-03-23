@@ -24,7 +24,7 @@ export default function App(props: AppProps & { renderer: any }) {
           name="description"
           content="Get the best way to improve your company. Through the feedback of your customers."
         />
-        <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/src/public/favicon.ico" />
       </Head>
       <RendererProvider renderer={renderer || createDOMRenderer()}>
         <SSRProvider>

@@ -46,14 +46,6 @@ const Home: NextPage = () => {
         <SubHeadline color="white" align="center">
           Pongo makes it easy to use post-purchase surveys to increase sales.
         </SubHeadline>
-        <Stack vertical>
-          <Button size="large" appearance="primary" color="secondary">
-            Join the waitlist
-          </Button>
-          <Body color="white" align="center">
-            No credit card required
-          </Body>
-        </Stack>
         <Stack horizontalAlignment="center" verticalAlignment="center">
           <Image
             width="324px"
