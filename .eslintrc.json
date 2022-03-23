@@ -1,0 +1,4 @@
+{
+  "extends": ["plugin:@pongo-ui/eslint-plugin/react", "plugin:@next/next/recommended"],
+  "root": true
+}
