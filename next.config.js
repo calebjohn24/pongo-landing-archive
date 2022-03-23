@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['lh3.googleusercontent.com', 'ssl.webflow.com'],
+    domains: ['lh3.googleusercontent.com'],
     formats: ['image/avif', 'image/webp'],
     loader: 'akamai',
     path: '',
