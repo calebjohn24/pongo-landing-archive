@@ -1368,7 +1368,7 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-portal@9.0.0-rc.5":
+"@fluentui/react-portal@9.0.0-rc.5", "@fluentui/react-portal@^9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-portal/-/react-portal-9.0.0-rc.5.tgz#9a57fc48d0de49cc8aded6960a112f61f3f83d0a"
   integrity sha512-6VIfRAAzT90I0eMSPnBWGHbu6JXydBbkjB5sotOjEdISYVIvtL35q1wOoKObW2wr2FB7N0i0eRX/fb2s4im2qg==
@@ -1794,29 +1794,29 @@
     eslint-plugin-react "^7.28.0"
     eslint-plugin-react-hooks "^4.3.0"
 
-"@pongo-ui/react-accordion@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-accordion/-/react-accordion-0.0.2.tgz#e852ad084ae5eb3562e375188380924958450e1a"
-  integrity sha512-/aOZlx0Pn7hEErS/sBPlOS+qlE//XjMGWd6qrqh2rbW0KUeapQ3KQHsaDADKrgc8sAVc6K0cGhar+Hd2pyBRXw==
+"@pongo-ui/react-accordion@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-accordion/-/react-accordion-0.0.3.tgz#26084fcc0613ba4b2b4df5d547a6b48beee0fb1d"
+  integrity sha512-aBdGMgzoCCwh9t5s143yZL1AXbCuQeKLDeEPVS4IONw9Db//2DIzluBKmoc54b3tw0qWtICc06Ssas5yj8oyjg==
   dependencies:
     "@fluentui/react-accordion" "^9.0.0-rc.5"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-avatar@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-avatar/-/react-avatar-0.0.8.tgz#ced57023f061b28b3f475bbe914354cb8c4bb59e"
-  integrity sha512-bpePHJUKk2fUziWlb++gTnhoRYblnLyY81gCOPgYs7kbkFyKjf4EncpoII8B3AW6YEaBMerjtv/80tUo3P6b1Q==
+"@pongo-ui/react-avatar@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-avatar/-/react-avatar-0.0.10.tgz#485bb36b3452f070a040bd741acfe65a43de016c"
+  integrity sha512-LpJrEN+pKFL3fgfeXPjgOL/akHNISqCFofQYD88gFBeZbT1tLo6iI1w4euGHKZipdOEZrhllQx6+9lvJzWaibA==
   dependencies:
     "@fluentui/react-avatar" "^9.0.0-rc.5"
     "@fluentui/react-shared-contexts" "^9.0.0-rc.4"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
     "@pongo-ui/react-theme-generator" "^0.1.2"
 
-"@pongo-ui/react-button@^1.1.24":
+"@pongo-ui/react-button@^1.1.27":
   version "1.1.27"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-button/-/react-button-1.1.27.tgz#27e74e1c02ac797dfc968ef241235c5f7f5fc28b"
   integrity sha512-NZ6AR1sqyEJssaec/MkKK8sNADbBrLwQ15FORYeEjCyPVB+XxttnKK7r4vpLnTpC7ksjU3bjQyJn/YrOkM7SCw==
@@ -1827,64 +1827,77 @@
     "@griffel/react" "^1.0.0"
     "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-card@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-card/-/react-card-0.0.14.tgz#5a5d6c50ec303b115340f10bdd2f67a40f84eec6"
-  integrity sha512-y85KaKdsW8V8g+hmxaAS1pCHsYdBPzXtQ4oQrKqxqDxyKZCtgMrLeWhVjXyYaJTxVTL4idPb8g1CSMf1hCTmrw==
+"@pongo-ui/react-card@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-card/-/react-card-0.0.19.tgz#834b65ddfd9320fcb780f7b0b28b83aee183e170"
+  integrity sha512-2/nnhWXOgl488tOX0aYiDftUVS2malrmjp6dFUbxUGZcGcK3ww2Mr7mnlz/cO+cu2PxlT9q4qAuW6pmGUoNobw==
   dependencies:
     "@fluentui/react-tabster" "^9.0.0-rc.5"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-checkbox@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-checkbox/-/react-checkbox-0.0.4.tgz#8f49f664a930c0cac75cb1d39c3ce9069f1b7fef"
-  integrity sha512-ovsABDqQs+gewrmUfGlLOK5fvK+6QCOml6o/Cq70tI75U70Rfq/m3Z+oG1Kfo0VlOYesKP7Jm96mwCtf99Kcmg==
-  dependencies:
-    "@fluentui/react-tabster" "^9.0.0-rc.5"
-    "@fluentui/react-utilities" "^9.0.0-rc.5"
-    "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-icon" "^0.1.8"
-    "@pongo-ui/react-theme" "^0.0.11"
-
-"@pongo-ui/react-components@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-components/-/react-components-0.0.7.tgz#5fe29569486de61e5bf74f2cf9b3160be2959fc3"
-  integrity sha512-BUbzRGVD32GoQ63ZZKwChLIomCHSVXMsq3o9Od9rBSqGPxBSjqKlsdv8MfCvf3B8M0U/u1aPaX3JI8AsUboqVg==
-  dependencies:
-    "@pongo-ui/react-accordion" "^0.0.2"
-    "@pongo-ui/react-avatar" "^0.0.8"
-    "@pongo-ui/react-button" "^1.1.24"
-    "@pongo-ui/react-card" "^0.0.14"
-    "@pongo-ui/react-checkbox" "^0.0.4"
-    "@pongo-ui/react-divider" "^0.0.8"
-    "@pongo-ui/react-icon" "^0.1.8"
-    "@pongo-ui/react-input" "^0.2.3"
-    "@pongo-ui/react-label" "^0.0.7"
-    "@pongo-ui/react-layout" "^0.0.1"
-    "@pongo-ui/react-link" "^0.1.11"
-    "@pongo-ui/react-menu" "^0.1.5"
-    "@pongo-ui/react-provider" "^0.0.3"
-    "@pongo-ui/react-radio" "^0.0.5"
-    "@pongo-ui/react-switch" "^0.0.7"
-    "@pongo-ui/react-tabs" "^0.0.9"
-    "@pongo-ui/react-text" "^0.0.12"
-    "@pongo-ui/react-theme" "^0.0.11"
-    "@pongo-ui/react-theme-generator" "^0.1.2"
-    "@pongo-ui/react-toolbar" "^0.0.11"
-
-"@pongo-ui/react-divider@^0.0.8":
+"@pongo-ui/react-checkbox@^0.0.8":
   version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-divider/-/react-divider-0.0.8.tgz#2f0404236047f7e6b3998c52d165b91e411e722e"
-  integrity sha512-FfitE0NC/zOt6YOA+h13IRubwJRshsEy9fbpLKnKJcmVKRDJ6j5Dp+CGz3XB0Upee4Y8O24Jg8tdiY65pRd/+w==
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-checkbox/-/react-checkbox-0.0.8.tgz#e3cd88e3587cf560da9fbfb6f372d74c986a3d5e"
+  integrity sha512-rdmCbdFHV+LUOzoPFvwXoBJC3yDONMvDfQRvI6P+eymUko99g1SJNBo4A7H3C0BQDA9vlgE2c19ny3R2c5D+SA==
+  dependencies:
+    "@fluentui/react-tabster" "^9.0.0-rc.5"
+    "@fluentui/react-utilities" "^9.0.0-rc.5"
+    "@griffel/react" "^1.0.0"
+    "@pongo-ui/react-icon" "^0.1.11"
+    "@pongo-ui/react-theme" "^0.0.12"
+
+"@pongo-ui/react-components@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-components/-/react-components-0.0.12.tgz#468e55c8f0e8b16db57db1bdcdfd627dd7521f20"
+  integrity sha512-GWXa+bKRx/PGhr49qSkBawxQELcSwfXE+k508lCwZ3ZXqeqwhaqgwlhj+jewdclRdLJ4F8ggG4RAM37gbknfSw==
+  dependencies:
+    "@pongo-ui/react-accordion" "^0.0.3"
+    "@pongo-ui/react-avatar" "^0.0.10"
+    "@pongo-ui/react-button" "^1.1.27"
+    "@pongo-ui/react-card" "^0.0.19"
+    "@pongo-ui/react-checkbox" "^0.0.8"
+    "@pongo-ui/react-dialog" "^0.0.3"
+    "@pongo-ui/react-divider" "^0.0.12"
+    "@pongo-ui/react-icon" "^0.1.11"
+    "@pongo-ui/react-input" "^0.2.7"
+    "@pongo-ui/react-label" "^0.0.11"
+    "@pongo-ui/react-layout" "^0.0.3"
+    "@pongo-ui/react-link" "^0.1.13"
+    "@pongo-ui/react-menu" "^0.1.8"
+    "@pongo-ui/react-provider" "^0.0.4"
+    "@pongo-ui/react-radio" "^0.0.6"
+    "@pongo-ui/react-switch" "^0.0.10"
+    "@pongo-ui/react-table" "^0.0.1"
+    "@pongo-ui/react-tabs" "^0.0.10"
+    "@pongo-ui/react-text" "^0.0.16"
+    "@pongo-ui/react-theme" "^0.0.12"
+    "@pongo-ui/react-theme-generator" "^0.1.2"
+    "@pongo-ui/react-toolbar" "^0.0.15"
+
+"@pongo-ui/react-dialog@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-dialog/-/react-dialog-0.0.3.tgz#a32e5a185dd8ae9d5e51707d9d71e69f67a6661b"
+  integrity sha512-DIuDKaWjWbwCpeV8dDLXzQBOJI7A/tPNe50WB+CHZuz9Q/E5w9zf9DQZWWmkGU6FF+VVh+PVJLzoQaMr9K9DkA==
+  dependencies:
+    "@fluentui/react-portal" "^9.0.0-rc.5"
+    "@fluentui/react-tabster" "^9.0.0-rc.5"
+    "@fluentui/react-utilities" "^9.0.0-rc.5"
+    "@griffel/react" "^1.0.0"
+    "@pongo-ui/react-theme" "^0.0.12"
+
+"@pongo-ui/react-divider@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-divider/-/react-divider-0.0.12.tgz#21b3d21dd356e317b354955236441064e6fd89b6"
+  integrity sha512-NLnqB2E2HocVp9d2dl328sXwGKjOm7a18tZD638lY6l13/sm2l+Yx5eWB0N4ntgC20GK8qgK55jIRrEdtvCaEQ==
   dependencies:
     "@fluentui/react-divider" "^9.0.0-rc.5"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-icon@^0.1.11", "@pongo-ui/react-icon@^0.1.8":
+"@pongo-ui/react-icon@^0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-icon/-/react-icon-0.1.11.tgz#92e2827e790f5205f0cb21dbc9caa0c95abb899f"
   integrity sha512-GpFzv4JwvC935VLI4pxc7QF46Bad8tX4f6ESpkQdW6Ds0mCz051TJdQ+kLLI5t7JfsC0C/9CmbFbRjaPP6rOCg==
@@ -1894,7 +1907,7 @@
     "@griffel/react" "^1.0.0"
     "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-input@^0.2.3":
+"@pongo-ui/react-input@^0.2.7":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-input/-/react-input-0.2.7.tgz#f81100114874c15f03ecf7d8bf4ef892c6c51825"
   integrity sha512-K8c4rtqggMHHOl2vYKFj1bp9CZsoHM0lsOfREo6qDUvvxofRaVDW5DLBnuxfFtHlPaztgxhjRHPCYoraMaoc7g==
@@ -1906,26 +1919,26 @@
     "@pongo-ui/react-menu" "^0.1.8"
     "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-label@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-label/-/react-label-0.0.7.tgz#e010d92145b36b1352dcb3bbc804934c3dde5deb"
-  integrity sha512-/ojLiLvqthQ7vmmXj3I55KPNsx98KEetaV71iYQBSYMT0nIrr7UE/C6pQXr3dyu2o/2QspZoOgbID+K3b9yq7g==
+"@pongo-ui/react-label@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-label/-/react-label-0.0.11.tgz#582a9113448410e57fc7b4c03f911d73bb34c0be"
+  integrity sha512-68RAZDbOq6LEx5CD2jKDYqY9jdw3U4CkM4Ubpq2ShO6WhstEIAnBQWSpNkw3Sjsl63T6KCGKJVgCvjjSCMqiEQ==
   dependencies:
     "@fluentui/react-label" "^9.0.0-beta.9"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-layout@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-layout/-/react-layout-0.0.1.tgz#439da069e5e4e45f1b3d254a84b81e3e2b2c8c1c"
-  integrity sha512-sTrql9dFobN/ZpAoClLbcydGrt1wQlq8Vf6q502UUlsubU3aXfmlSpkotroKD7oeOs7r9uePRPdaWMqUXDmMtA==
+"@pongo-ui/react-layout@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-layout/-/react-layout-0.0.3.tgz#fe3949a4daec396fee4df30787354b1dcfd943ac"
+  integrity sha512-CQWQLOvwiOqgB8AlEQqVL6P2NxJGl0hNF+9F9FW4GLqkdldOYgBxLnqr4/cjT2IUaM/Xf7UU0PAjp5C1mK0h6A==
   dependencies:
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-link@^0.1.11":
+"@pongo-ui/react-link@^0.1.13":
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-link/-/react-link-0.1.13.tgz#5bcba20e9cc75efc3691bf4f20efb687a3253fee"
   integrity sha512-6eKC+G172wXjyCNiqsR/77PHIZB6xwB1473f9vxmYbxvtgGCD1FXCgn8EPeSPGWgi5K91K9Aq2uq7GRiwQsJfQ==
@@ -1935,7 +1948,7 @@
     "@griffel/react" "^1.0.0"
     "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-menu@^0.1.5", "@pongo-ui/react-menu@^0.1.8":
+"@pongo-ui/react-menu@^0.1.8":
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-menu/-/react-menu-0.1.8.tgz#92d63d026a32ffa1d5e2e7595794b318b89ed976"
   integrity sha512-mj1E02/nMU0zHhlSPRfVKmMU/KRniPKRPrNi86/Dr/V0PuwQuV6jKIIvYfpUjbgXRKxYk0XrX7PuRWYhNGVQuQ==
@@ -1945,16 +1958,6 @@
     "@griffel/react" "^1.0.0"
     "@pongo-ui/react-icon" "^0.1.11"
     "@pongo-ui/react-theme" "^0.0.12"
-
-"@pongo-ui/react-provider@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-provider/-/react-provider-0.0.3.tgz#ba262c5ed8c518e74cb13a30cbfa24175d9e7822"
-  integrity sha512-EY7VjnSHTbafUpKRg+xxae0hsoX7CgnbO3jQNMtgkSsyq4/+X630F9iHtGbhdrQ7734PBH3vf0QFm8mjwhGA+Q==
-  dependencies:
-    "@fluentui/react-provider" "^9.0.0-rc.5"
-    "@fluentui/react-utilities" "^9.0.0-rc.5"
-    "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
 
 "@pongo-ui/react-provider@^0.0.4":
   version "0.0.4"
@@ -1966,15 +1969,15 @@
     "@griffel/react" "^1.0.0"
     "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-radio@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-radio/-/react-radio-0.0.5.tgz#18512e64b8343bb0230aa6f5075a3ef2cf41b23b"
-  integrity sha512-lpOQomqMrtZQhZ0SYbjHtB4LhkOrHEJt3H6yb0d1sI2NfYyf2LZorAw79VSIWBVnK1cySTLku6H1yIiILKRiuA==
+"@pongo-ui/react-radio@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-radio/-/react-radio-0.0.6.tgz#a2054af1d1c93c2ac061a8ca1070765b9fc92b32"
+  integrity sha512-Xf/wogCIiMUfMFdv0BXxMOXbIJVGlyo+eqnaMPk0XcpajQXN67ZSHj39KJXcSTUYeFpmdAXDUa+vV3osizz9OQ==
   dependencies:
     "@fluentui/react-radio" "^9.0.0-beta.2"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
 "@pongo-ui/react-storybook@^0.0.14":
   version "0.0.14"
@@ -1996,45 +1999,47 @@
     "@storybook/react" "^6.4.15"
     "@storybook/theming" "^6.4.19"
 
-"@pongo-ui/react-switch@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-switch/-/react-switch-0.0.7.tgz#5750cb3657625a85abbaa4db9a6dafd2ba4eb666"
-  integrity sha512-K2BzCdIqH29yqtA6hEANKwueFzHg8A/PxXK6eg9iX4Y+1zIsFYCR+weMAhSbQ/bACT99FIZO4kptUq06i6jFFA==
+"@pongo-ui/react-switch@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-switch/-/react-switch-0.0.10.tgz#1eb5cfb8b8fb73e01330ee324e0f2da56000005e"
+  integrity sha512-6ZXsXVI2Yb4ePx91B+HK9EoIcAwZDGVIj5PZuuWh1LVVyn8rhj23u8XRok97P1h2Yg6/3ng3nXDoQ01degIBuQ==
   dependencies:
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-tabs@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-tabs/-/react-tabs-0.0.9.tgz#9f8d8e56f5d982f861628b3aa49a76e6e976c1e8"
-  integrity sha512-p5OU/E8flDahN5Z0o1LNHBLsr3SN+2gBXOb7bkJYRuCk/PEZvzuzieWULL4EIxSB5EnVeqXLy4vtCoSf/KI9Ag==
+"@pongo-ui/react-table@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-table/-/react-table-0.0.1.tgz#eae0394f08cd38f89d5e49b3977f638245b24434"
+  integrity sha512-0P9Lq4q+ehchJPcKAukfFIvBsEtf0XDie1pUd0rF12YLhpTRiJvbn2nTCuuiYty4wbd3+sGXbAQO0bXvXhvtNA==
+  dependencies:
+    "@fluentui/react-utilities" "^9.0.0-rc.5"
+    "@griffel/react" "^1.0.0"
+    "@pongo-ui/react-theme" "^0.0.12"
+
+"@pongo-ui/react-tabs@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-tabs/-/react-tabs-0.0.10.tgz#ef650a596e65a494e56866ddf6aa2fede5fd40ae"
+  integrity sha512-bbQzBKyt5VRxtxFCBfxXI0FBRK/wy5r0gfQ8A/f0BKynTgR1xSXE2/vSJYd3DV2FY9q+673n3gGqiZ3BzDTnOQ==
   dependencies:
     "@fluentui/react-tabs" "9.0.0-beta.8"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
-"@pongo-ui/react-text@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-text/-/react-text-0.0.12.tgz#ebf46a6fd3461cd0db039758e47ef92be7ee96d1"
-  integrity sha512-2VMzgEYzZgeWJYXFvrVmfWeaudpToi9TVThwM8vEmEsoDiv6/YRfgsTGuRR07VTOoEXFOslASQ9lyKq0f6AoVg==
+"@pongo-ui/react-text@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-text/-/react-text-0.0.16.tgz#3e472b975a29fdd963fd60e7356afe56b8a7b161"
+  integrity sha512-YkC61hdwmU4DIl2XegsqYRD+34jCh1vZ0ouyV3NVhmJeLcxbvkGxHDefxGhU1tMfh/B79LxYgVl7aOyaCgd0qQ==
   dependencies:
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
 "@pongo-ui/react-theme-generator@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme-generator/-/react-theme-generator-0.1.2.tgz#d7320ef75f181d1e9089c20f3d86095c13898e59"
   integrity sha512-dfyG48CWLTvaDWuwBNNFxtrqicsTHFixjoqkFGwdPy9Z+AipfPJq0RuqGmCO7LFrO4myBjv6C5gnrERxGa4DhA==
-
-"@pongo-ui/react-theme@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme/-/react-theme-0.0.11.tgz#3a43caf7e6087e9487c7a666464266dbd0cd8808"
-  integrity sha512-c14qm17gc0+GK4YOa+Q1Z/sz/jfctcCToFneejd/oABNQ1mIlryTjWirjPvthEiiUF3+KtX/TgFCEhPhRElWmA==
-  dependencies:
-    "@pongo-ui/react-theme-generator" "^0.1.2"
 
 "@pongo-ui/react-theme@^0.0.12":
   version "0.0.12"
@@ -2043,16 +2048,16 @@
   dependencies:
     "@pongo-ui/react-theme-generator" "^0.1.2"
 
-"@pongo-ui/react-toolbar@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-toolbar/-/react-toolbar-0.0.11.tgz#82bedb95cacea885897d61b53c053b76b31ffaec"
-  integrity sha512-b/c03qftLmc3KP3RBgo7NXp9DuZ2B1GfmhHe05cOvjYhZuHzzmN6Qd/c/h4kt4UPmAkbJJrDf+hheRja3XCD8Q==
+"@pongo-ui/react-toolbar@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-toolbar/-/react-toolbar-0.0.15.tgz#cce01caf3628dac0b4744318719847881896f3dc"
+  integrity sha512-DSPqsnIF+2TR6uZxsvgX2bvb2hM6TxpCnbrRQeJP1mgOG4q3T7TZVU1yFp18aJyWyJQ6M8Z1S+rTK0fygGUv2A==
   dependencies:
     "@fluentui/react-aria" "^9.0.0-rc.5"
     "@fluentui/react-tabster" "^9.0.0-rc.5"
     "@fluentui/react-utilities" "^9.0.0-rc.5"
     "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.11"
+    "@pongo-ui/react-theme" "^0.0.12"
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.4"
