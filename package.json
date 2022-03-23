@@ -10,7 +10,7 @@
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
     "export": "next build && next export",
-    "chromatic": "chromatic --project-token=f9bd08d5b69b"
+    "chromatic": "chromatic"
   },
   "dependencies": {
     "react-dom": "^17.0.2",
