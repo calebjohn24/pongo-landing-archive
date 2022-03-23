@@ -40,7 +40,10 @@ const useStyles = makeStyles({
 });
 
 const Home: NextPage = () => {
+  const formRef = React.useRef<HTMLDivElement>(null);
   const styles = useStyles();
+
+  const onButtonClick = () => window.scrollTo({ top: formRef?.current?.getBoundingClientRect().y });
 
   return (
     <>
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
           Pongo makes it easy to use post-purchase surveys to increase sales.
         </SubHeadline>
         <Stack vertical>
-          <Button size="large" appearance="primary" color="secondary">
+          <Button onClick={onButtonClick} size="large" appearance="primary" color="secondary">
             Join the waitlist
           </Button>
           <Body color="white" align="center">
@@ -101,7 +104,7 @@ const Home: NextPage = () => {
           </Stack>
         </Stack>
       </Container>
-      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center" ref={formRef}>
         <Header1>Join our waitlist</Header1>
         <ContactForm />
       </Container>
@@ -115,7 +118,6 @@ const Home: NextPage = () => {
         <Divider />
         <Stack verticalAlignment="center" grow>
           <Body color="white">© 2022 Pongo Technologies, Inc. 🦧</Body>
-
           <Button href="https://www.linkedin.com/company/pongoai" as="a" appearance="transparent" shape="circle">
             <LinkedinIcon color="white" />
           </Button>
