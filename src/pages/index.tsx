@@ -14,6 +14,7 @@ import {
   LogoIcon,
   Divider,
   tokens,
+  Header3,
 } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
@@ -65,6 +66,9 @@ const Home: NextPage = () => {
             Join the beta
           </Button>
         </Stack>
+        <Header3 color="white" align="center">
+          100% Free, But limited Space
+        </Header3>
         <Stack horizontalAlignment="center" verticalAlignment="center">
           <Image width="324px" height="648px" src="image/feedback-demo.gif" />
           <Stack vertical>
@@ -101,7 +105,8 @@ const Home: NextPage = () => {
         </Stack>
       </Container>
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center" ref={formRef}>
-        <Header1>Join our beta (Limited Space)</Header1>
+        <Header1 align="center">Join the beta</Header1>
+        <Text align="center">100% Free, But Limited Space</Text>
         <ContactForm />
       </Container>
       <Container
