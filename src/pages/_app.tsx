@@ -26,6 +26,7 @@ export default function App(props: AppProps & { renderer: any }) {
       </Head>
       <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
       <Script
+        id="google-analytics"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
