@@ -73,7 +73,8 @@ const Home: NextPage = () => {
               Post-purchase feedback collection is a critical tool for understanding your customers.
             </Text>
             <Text className={styles.textMaxWidth} color="white" size={500}>
-              Pongo turns customer feedback intopersonalized product recommendations that can be purchased in one click.
+              Pongo turns customer feedback into personalized product recommendations that can be purchased in one
+              click.
             </Text>
           </Stack>
         </Stack>
