@@ -58,26 +58,23 @@ const Home: NextPage = () => {
           Turn Surveys Into Sales
         </Display>
         <SubHeadline color="white" align="center">
-          Pongo makes it easy to use post-purchase surveys to increase sales.
+          Pongo makes it easy to turn post-purchase surveys into a one-click buying experience.
         </SubHeadline>
         <Stack vertical>
           <Button onClick={onButtonClick} size="large" appearance="primary" color="secondary">
             Join the waitlist
           </Button>
-          <Body color="white" align="center">
-            No credit card required
-          </Body>
         </Stack>
         <Stack horizontalAlignment="center" verticalAlignment="center">
           <Image width="324px" height="648px" src="image/feedback-demo.gif" />
           <Stack vertical>
-            <Header1 color="white">Super-charge your post-purchase conversions ⚡</Header1>
+            <Header1 color="white">Super-charge your customer return rate ⚡</Header1>
             <Text className={styles.textMaxWidth} color="white" size={500}>
-              Post-purchase feedback collection is a critical point for retaining customers.
+              Post-purchase feedback collection is a critical tool for understanding your customers.
             </Text>
             <Text className={styles.textMaxWidth} color="white" size={500}>
-              Pongo lets you collect feedback that instantly generates personalized product recommendations that can be
-              purchased in one click
+              Pongo turns customer feedback into personalized product recommendations that can be purchased in one
+              click.
             </Text>
           </Stack>
         </Stack>
