@@ -74,10 +74,12 @@ const Home: NextPage = () => {
           <Stack vertical>
             <Header1 color="white">Super-charge Your Customer Return Rate ⚡</Header1>
             <Text className={styles.textMaxWidth} color="white" size={500}>
-              Post-purchase feedback requests have the highest open and click rates of any customer interaction.
+              Post-purchase feedback requests have the highest open and click rates of any customer interaction, but 75%
+              of customers never re-buy.
             </Text>
             <Text className={styles.textMaxWidth} color="white" size={500}>
-              Pongo turns this feedback into personalized product recommendations that can be purchased in one click.
+              Pongo fixes this by turning feedback into personalized product recommendations that can be purchased in
+              one click.
             </Text>
           </Stack>
         </Stack>
