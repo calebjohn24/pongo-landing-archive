@@ -3,9 +3,10 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
 
-workflows:
-  BuildTestLint:
-    jobs:
+jobs:
+  build:
+    steps:
+      - checkout
       - node/test:
           version: '16.14'
           pkg-manager: yarn
