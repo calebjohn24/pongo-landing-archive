@@ -5,11 +5,10 @@ orbs:
 
 jobs:
   build:
+    docker:
+      - image: circleci/node:10.16.3
     steps:
       - checkout
-      - node/test:
-          version: '16.14'
-          pkg-manager: yarn
       - run:
           name: Install Dependencies
           command: yarn
