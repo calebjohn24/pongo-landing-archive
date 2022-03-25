@@ -4,7 +4,7 @@
 
 This is Pongo's landing page. Our site's our built using [React](https://reactjs.org/) and our component library [Pongo UI](https://github.com/PongoAI/pongo-ui).
 
-[![Build Status](https://img.shields.io/azure-devops/build/czearing/pongoai-frontend/8/main?style=flat-square)](https://dev.azure.com/czearing/pongoai-frontend/_build/latest?definitionId=8&branchName=main)
+[![CircleCI](https://img.shields.io/circleci/build/github/PongoAI/pongo-landing/main?style=flat-square&token=d8eea492ad28a992f35ea55f9fe90e1807f6b00f)](https://app.circleci.com/pipelines/github/PongoAI/pongo-landing?branch=main)
 [![License](https://img.shields.io/badge/License-MIT-%232060cf?style=flat-square)](https://github.com/PongoAI/pongo-landing/blob/HEAD/LICENSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/pongoai/pongo-landing?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/PongoAI/pongo-landing?style=flat-square)
