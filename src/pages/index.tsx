@@ -29,14 +29,19 @@ const InstagramIcon = createIcon({
 });
 
 const useStyles = makeStyles({
-  brandBackground: {
+  mainSection: {
     backgroundColor: tokens.brand,
+    minHeight: '100vh',
   },
   secondaryBackground: {
     backgroundColor: tokens.secondary,
   },
   textMaxWidth: {
     maxWidth: '500px',
+  },
+  iconStyles: {
+    width: 'min(12vw, 128px)',
+    height: 'min(12vw, 128px)',
   },
 });
 
@@ -49,12 +54,12 @@ const Home: NextPage = () => {
   return (
     <>
       <Container
-        className={styles.brandBackground}
+        className={styles.mainSection}
         appearance="relaxed"
         horizontalAlignment="center"
         verticalAlignment="center"
       >
-        <LogoIcon color="white" size="display" />
+        <LogoIcon className={styles.iconStyles} color="white" />
         <Display color="white" align="center">
           Turn Follow-Ups Into Sales
         </Display>
@@ -69,66 +74,66 @@ const Home: NextPage = () => {
         <Header3 color="white" align="center">
           100% Free, But limited Space
         </Header3>
-        <Stack horizontalAlignment="center" verticalAlignment="center">
+      </Container>
+
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Image width="324px" height="648px" src="image/feedback-demo.gif" />
           <Stack vertical>
-            <Header1 color="white">Super-charge Your Customer Return Rate ⚡</Header1>
-            <Text className={styles.textMaxWidth} color="white" size={500}>
+            <Header1>Super-charge Your Customer Return Rate ⚡</Header1>
+            <Body className={styles.textMaxWidth} size={500}>
               Post-purchase feedback requests have the highest open and click rates of any customer interaction, but 75%
               of customers never re-buy.
-            </Text>
-            <Text className={styles.textMaxWidth} color="white" size={500}>
+            </Body>
+            <Body className={styles.textMaxWidth} size={500}>
               Pongo fixes this by turning feedback into personalized product recommendations that can be purchased in
               one click.
-            </Text>
+            </Body>
           </Stack>
         </Stack>
+        <Divider />
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Stack vertical>
-            <Header1 color="white">Intelligent Cross-Sells 🧠</Header1>
-            <Text className={styles.textMaxWidth} color="white" size={500}>
+            <Header1>Intelligent Cross-Sells 🧠</Header1>
+            <Body className={styles.textMaxWidth} size={500}>
               Our advanced recommendation system combines the customer's feedback with their purchase history, to serve
               up personalized product recommendations.
-            </Text>
+            </Body>
           </Stack>
           <Image width="316px" height="300px" src="image/increase-sales.png" />
         </Stack>
+        <Divider />
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Image width="400px" height="400px" src="image/survey-demo.png" />
           <Stack vertical>
-            <Header1 color="white">An Interface Built for Conversions 📈</Header1>
-            <Text className={styles.textMaxWidth} color="white" size={500}>
+            <Header1>An Interface Built for Conversions 📈</Header1>
+            <Body className={styles.textMaxWidth} size={500}>
               Our feedback interface is built from the ground up to be intuitive and easy for the customer to fill out.
-            </Text>
-            <Text className={styles.textMaxWidth} color="white" size={500}>
+            </Body>
+            <Body className={styles.textMaxWidth} size={500}>
               Don't settle for clunky surveys your customer will close out of.
-            </Text>
+            </Body>
           </Stack>
         </Stack>
       </Container>
+      <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center" ref={formRef}>
         <Header1 align="center">Join the beta</Header1>
         <Text align="center">100% Free, But Limited Space</Text>
         <ContactForm />
       </Container>
-      <Container
-        className={styles.brandBackground}
-        appearance="relaxed"
-        horizontalAlignment="center"
-        verticalAlignment="center"
-      >
-        <LogoIcon size="large" color="white" />
-        <Divider />
+      <Divider />
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack verticalAlignment="center" grow>
-          <Body color="white">© 2022 Pongo Technologies, Inc. 🦧</Body>
+          <Body>© 2022 Pongo Technologies, Inc. 🦧</Body>
           <Button href="https://www.linkedin.com/company/pongoai" as="a" appearance="transparent" shape="circle">
-            <LinkedinIcon color="white" />
+            <LinkedinIcon color="inherit" />
           </Button>
           <Button href="https://twitter.com/joinpongo" as="a" appearance="transparent" shape="circle">
-            <TwitterIcon color="white" />
+            <TwitterIcon color="inherit" />
           </Button>
           <Button href="https://www.instagram.com/joinpongo" as="a" appearance="transparent" shape="circle">
-            <InstagramIcon color="white" />
+            <InstagramIcon color="inherit" />
           </Button>
         </Stack>
       </Container>
