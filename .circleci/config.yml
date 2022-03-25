@@ -1,0 +1,20 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7
+
+workflows:
+  BuildTestLint:
+    jobs:
+      - node/test:
+          version: '16.14'
+          pkg-manager: yarn
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - run:
+          name: Lint
+          command: yarn lint
+      - run:
+          name: Build
+          command: yarn build
