@@ -1,14 +1,15 @@
 import { createContext, useContextSelector } from '@fluentui/react-context-selector';
 import type { ContextSelector, Context } from '@fluentui/react-context-selector';
+import type { Theme } from '@pongo-ui/react-components';
 
 export type AppContextValue = {
-  setTheme: () => void;
-  findTheme: String;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+  findTheme: (theme: string) => Theme;
 };
 
 export const AppContext: Context<AppContextValue> = createContext<AppContextValue>({
   setTheme: () => {},
-  findTheme: '',
+  findTheme: () => ({} as Theme),
 });
 
 export const AppProvider = AppContext.Provider;

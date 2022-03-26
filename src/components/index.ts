@@ -1,2 +1,2 @@
-export * from './contactForm';
+export * from './ContactForm';
 export * from './LandingToolbar';
