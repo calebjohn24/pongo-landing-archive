@@ -15,7 +15,8 @@ export default function App(props: AppProps & { renderer: any }) {
 
   const [isMounted, setIsMounted] = React.useState(false);
 
-  useLocalDefault('theme', 'System');
+  // TODO: This should by System
+  useLocalDefault('theme', 'Light');
   const userTheme = useGetLocal('theme');
 
   const findTheme = React.useCallback(

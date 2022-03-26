@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             <Stack horizontalAlignment="center">
               <RadioGroup className={styles.emojiButtonStyles} layout="horizontal">
                 <Radio label={'👍'} value={'0'} />
-                <Radio label={'👎'} value={'2'} />
+                <Radio label={'👎'} value={'1'} />
               </RadioGroup>
             </Stack>
             <Body>What could have gone better?</Body>
