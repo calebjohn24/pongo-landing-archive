@@ -110,19 +110,16 @@ const Home: NextPage = () => {
             </Stack>
             <Body>How happy are you with your purchases?</Body>
             <Stack horizontalAlignment="center">
-              <Button className={styles.emojiButtonStyles} size="large" shape="circle">
-                😡
+              <Button className={styles.emojiButtonStyles} size="large" shape="circle" appearance="subtle">
+                👍
               </Button>
-              <Button className={styles.emojiButtonStyles} size="large" shape="circle">
-                😐
-              </Button>
-              <Button className={styles.emojiButtonStyles} size="large" shape="circle">
-                😄
+              <Button className={styles.emojiButtonStyles} size="large" shape="circle" appearance="subtle">
+                👎
               </Button>
             </Stack>
             <Body>What could have gone better?</Body>
             <Stack>
-              <ToggleButton shape="circular">Results</ToggleButton>
+              <ToggleButton shape="circular">Material</ToggleButton>
               <ToggleButton shape="circular">Packaging</ToggleButton>
               <ToggleButton shape="circular">Price</ToggleButton>
             </Stack>
