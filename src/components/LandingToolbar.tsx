@@ -16,6 +16,7 @@ import {
 } from '@pongo-ui/react-components';
 import type { MenuProps } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
+import { useAppContext } from '../context';
 import Link from 'next/link';
 
 const useStyles = makeStyles({
@@ -28,7 +29,18 @@ const useStyles = makeStyles({
   },
 });
 
+const useAppContextSelectors = () => {
+  const setTheme = useAppContext(context => context.setTheme);
+  const findTheme = useAppContext(context => context.findTheme);
+
+  return {
+    setTheme,
+    findTheme,
+  };
+};
+
 export const LandingToolbar = () => {
+  const appContext = useAppContextSelectors();
   const userTheme = localStorage.getItem('theme') || 'Light';
 
   const styles = useStyles();
@@ -39,11 +51,12 @@ export const LandingToolbar = () => {
 
   const onChange: MenuProps['onCheckedValueChange'] = (ev, { name, checkedItems }) => {
     setCheckedValues({ [name]: checkedItems });
+    localStorage.setItem('theme', checkedItems[0]);
   };
 
-  // React.useEffect(() => {
-  //   setTheme(findTheme());
-  // }, [isDarkTheme, checkedValue, findTheme]);
+  React.useEffect(() => {
+    appContext.setTheme(appContext.findTheme(userTheme));
+  });
 
   return (
     <Toolbar className={styles.toolbar}>
