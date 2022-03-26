@@ -4,7 +4,6 @@ import {
   Container,
   Card,
   CardHeader,
-  CardRow,
   Display,
   Stack,
   Body,
@@ -20,7 +19,6 @@ import {
   Divider,
   tokens,
   Header3,
-  CardMedia,
 } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
@@ -77,7 +75,6 @@ const Home: NextPage = () => {
           100% Free, But limited Space
         </Header3>
       </Container>
-
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Image width="324px" height="648px" src="image/feedback-demo.gif" />
