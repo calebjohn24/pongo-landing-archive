@@ -79,7 +79,7 @@ const Home: NextPage = () => {
       </Container>
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Image width="324px" height="648px" src="image/feedback-demo.gif" />
+          <Image width="325" height="585" src="image/feedback-demo.gif" />
           <Stack vertical>
             <Header1>Super-charge Your Customer Return Rate ⚡</Header1>
             <Body className={styles.textMaxWidth} size={500}>
