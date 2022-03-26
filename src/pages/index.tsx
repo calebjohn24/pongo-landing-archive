@@ -9,6 +9,8 @@ import {
   Body,
   Header1,
   Header2,
+  RadioGroup,
+  Radio,
   LinkedinIcon,
   TwitterIcon,
   ToggleButton,
@@ -110,12 +112,10 @@ const Home: NextPage = () => {
             </Stack>
             <Body>How happy are you with your purchases?</Body>
             <Stack horizontalAlignment="center">
-              <Button className={styles.emojiButtonStyles} size="large" shape="circle" appearance="subtle">
-                👍
-              </Button>
-              <Button className={styles.emojiButtonStyles} size="large" shape="circle" appearance="subtle">
-                👎
-              </Button>
+              <RadioGroup className={styles.emojiButtonStyles} layout="horizontal">
+                <Radio label={'👍'} value={'0'} />
+                <Radio label={'👎'} value={'2'} />
+              </RadioGroup>
             </Stack>
             <Body>What could have gone better?</Body>
             <Stack>
