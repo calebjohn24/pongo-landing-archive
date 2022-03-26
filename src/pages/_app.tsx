@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Provider, webLightTheme } from '@pongo-ui/react-components';
+import { useSessionDefault } from '../utils';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
@@ -11,6 +12,8 @@ export default function App(props: AppProps & { renderer: any }) {
   const { Component, pageProps, renderer } = props;
 
   const [isMounted, setIsMounted] = React.useState(false);
+
+  useSessionDefault('theme', 'systemDefault');
 
   React.useEffect(() => {
     setIsMounted(true);

@@ -25,12 +25,12 @@ import {
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import { ContactForm } from '../components';
+import { ContactForm, LandingToolbar } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
     backgroundColor: tokens.brand,
-    minHeight: '100vh',
+    minHeight: '90vh',
   },
   secondaryBackground: {
     backgroundColor: tokens.secondary,
@@ -55,6 +55,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <LandingToolbar />
       <Container
         className={styles.mainSection}
         appearance="relaxed"

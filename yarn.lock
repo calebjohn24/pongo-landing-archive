@@ -1462,6 +1462,21 @@
     "@fluentui/keyboard-keys" "9.0.0-rc.4"
     tslib "^2.1.0"
 
+"@fluentui/react-window-provider@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-window-provider/-/react-window-provider-2.2.0.tgz#c3ae2d89c9ee802d8c572f689d907da25f74396b"
+  integrity sha512-1iZzfVQHZQn6IJSJD1pxnXi5H8T3vrZYi9aqKyVIPZ12DCTVE2gw8W3mnOjsfVuXMGdv1sA7dgd6v4xi9erBow==
+  dependencies:
+    "@fluentui/set-version" "^8.2.0"
+    tslib "^2.1.0"
+
+"@fluentui/set-version@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/set-version/-/set-version-8.2.0.tgz#8b13b9532250e98fad4498de8ac4537e0561c6c2"
+  integrity sha512-bqjpfhqaIkBy16vdYzdc7tER9Td7BTcmC+kCXuqkHOQVuG9LJfqVGRV0DA857KLhOxiy0GXwKMeDbNV5jJf6qQ==
+  dependencies:
+    tslib "^2.1.0"
+
 "@formspree/core@^2.6.1":
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/@formspree/core/-/core-2.6.3.tgz#c4015186786af6db3095751b90ecb5fb75e5dfb6"
