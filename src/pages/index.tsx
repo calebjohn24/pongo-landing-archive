@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Text,
   Container,
   Card,
   CardHeader,
@@ -20,17 +19,16 @@ import {
   LogoIcon,
   Divider,
   tokens,
-  Header3,
 } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import { ContactForm } from '../components';
+import { ContactForm, LandingToolbar } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
     backgroundColor: tokens.brand,
-    minHeight: '100vh',
+    minHeight: '90vh',
   },
   secondaryBackground: {
     backgroundColor: tokens.secondary,
@@ -45,6 +43,10 @@ const useStyles = makeStyles({
   emojiButtonStyles: {
     fontSize: '30px',
   },
+  grow: {
+    display: 'flex',
+    flexGrow: '1',
+  },
 });
 
 const Home: NextPage = () => {
@@ -55,6 +57,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <LandingToolbar />
       <Container
         className={styles.mainSection}
         appearance="relaxed"
@@ -68,20 +71,20 @@ const Home: NextPage = () => {
         <SubHeadline color="white" align="center">
           Pongo makes it easy to turn post-purchase surveys into a one-click buying experience.
         </SubHeadline>
-        <Stack vertical>
+        <Stack vertical horizontalAlignment="center">
           <Button onClick={onButtonClick} size="large" appearance="primary" color="secondary">
             Join the beta
           </Button>
+          <Body color="white" align="center">
+            Free, but a limited space.
+          </Body>
         </Stack>
-        <Header3 color="white" align="center">
-          100% Free, But limited Space
-        </Header3>
       </Container>
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Image width="325" height="585" src="image/feedback-demo.gif" />
           <Stack vertical>
-            <Header1>Super-charge Your Customer Return Rate ⚡</Header1>
+            <Header1>Super-charge your customer return rate ⚡</Header1>
             <Body className={styles.textMaxWidth} size={500}>
               Post-purchase feedback requests have the highest open and click rates of any customer interaction, but 75%
               of customers never re-buy.
@@ -95,7 +98,7 @@ const Home: NextPage = () => {
         <Divider />
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Stack vertical>
-            <Header1>Intelligent Cross-Sells 🧠</Header1>
+            <Header1>Intelligent cross-sells 🧠</Header1>
             <Body className={styles.textMaxWidth} size={500}>
               Our advanced recommendation system combines the customer's feedback with their purchase history, to serve
               up personalized product recommendations.
@@ -114,7 +117,7 @@ const Home: NextPage = () => {
             <Stack horizontalAlignment="center">
               <RadioGroup className={styles.emojiButtonStyles} layout="horizontal">
                 <Radio label={'👍'} value={'0'} />
-                <Radio label={'👎'} value={'2'} />
+                <Radio label={'👎'} value={'1'} />
               </RadioGroup>
             </Stack>
             <Body>What could have gone better?</Body>
@@ -128,7 +131,7 @@ const Home: NextPage = () => {
             </Button>
           </Card>
           <Stack vertical>
-            <Header1>An Interface Built for Conversions 📈</Header1>
+            <Header1>An interface built for conversions 📈</Header1>
             <Body className={styles.textMaxWidth} size={500}>
               Our feedback interface is built from the ground up to be intuitive for customers to fill out.
             </Body>
@@ -140,23 +143,30 @@ const Home: NextPage = () => {
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center" ref={formRef}>
-        <Header1 align="center">Join the beta</Header1>
-        <Text align="center">100% Free, But Limited Space</Text>
+        <Stack vertical horizontalAlignment="center">
+          <Header1 align="center">Join the beta</Header1>
+          <Body align="center">Free, but a limited space.</Body>
+        </Stack>
         <ContactForm />
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Stack verticalAlignment="center" grow>
-          <Body>© 2022 Pongo Technologies, Inc. 🦧</Body>
-          <Button href="https://www.linkedin.com/company/pongoai" as="a" appearance="transparent" shape="circle">
-            <LinkedinIcon color="inherit" />
-          </Button>
-          <Button href="https://twitter.com/joinpongo" as="a" appearance="transparent" shape="circle">
-            <TwitterIcon color="inherit" />
-          </Button>
-          <Button href="https://www.instagram.com/joinpongo" as="a" appearance="transparent" shape="circle">
-            <InstagramIcon color="inherit" />
-          </Button>
+        <Stack grow>
+          <Stack appearance="relaxed" verticalAlignment="center">
+            <Body>© 2022 Pongo Technologies, Inc. 🦧</Body>
+            <div className={styles.grow} />
+            <div>
+              <Button href="https://www.linkedin.com/company/pongoai" as="a" appearance="transparent" shape="circle">
+                <LinkedinIcon color="inherit" />
+              </Button>
+              <Button href="https://twitter.com/joinpongo" as="a" appearance="transparent" shape="circle">
+                <TwitterIcon color="inherit" />
+              </Button>
+              <Button href="https://www.instagram.com/joinpongo" as="a" appearance="transparent" shape="circle">
+                <InstagramIcon color="inherit" />
+              </Button>
+            </div>
+          </Stack>
         </Stack>
       </Container>
     </>

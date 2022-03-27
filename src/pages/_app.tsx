@@ -1,20 +1,49 @@
 import * as React from 'react';
-import { Provider, webLightTheme } from '@pongo-ui/react-components';
+import { Provider, webLightTheme, webDarkTheme } from '@pongo-ui/react-components';
+import { useLocalDefault, useThemeDetector, useGetLocal } from '../utils';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
 import { SSRProvider } from '@fluentui/react-utilities';
 import { RendererProvider, createDOMRenderer } from '@griffel/react';
+import { AppProvider } from '../context';
 import '../styles/globals.css';
 
 export default function App(props: AppProps & { renderer: any }) {
   const { Component, pageProps, renderer } = props;
+  const isDarkTheme = useThemeDetector();
 
   const [isMounted, setIsMounted] = React.useState(false);
+
+  // TODO: This should by System
+  useLocalDefault('theme', 'Light');
+  const userTheme = useGetLocal('theme');
+
+  const findTheme = React.useCallback(
+    (theme: string) => {
+      switch (theme) {
+        case 'System':
+          return isDarkTheme ? webDarkTheme : webLightTheme;
+        case 'Dark':
+          return webDarkTheme;
+        case 'Light':
+          return webLightTheme;
+        default:
+          return webLightTheme;
+      }
+    },
+    [isDarkTheme],
+  );
+
+  const [theme, setTheme] = React.useState(findTheme(userTheme));
 
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  React.useEffect(() => {
+    setTheme(findTheme(userTheme));
+  }, [isDarkTheme, findTheme, userTheme]);
 
   return (
     <>
@@ -40,11 +69,13 @@ export default function App(props: AppProps & { renderer: any }) {
       />
       <RendererProvider renderer={renderer || createDOMRenderer()}>
         <SSRProvider>
-          {isMounted && (
-            <Provider theme={webLightTheme}>
-              <Component {...pageProps} />
-            </Provider>
-          )}
+          <AppProvider value={{ setTheme, findTheme }}>
+            {isMounted && (
+              <Provider theme={theme}>
+                <Component {...pageProps} />
+              </Provider>
+            )}
+          </AppProvider>
         </SSRProvider>
       </RendererProvider>
     </>
