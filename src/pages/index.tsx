@@ -8,6 +8,7 @@ import {
   Body,
   Header1,
   Header2,
+  Header3,
   RadioGroup,
   Radio,
   LinkedinIcon,
@@ -35,6 +36,12 @@ const useStyles = makeStyles({
   },
   textMaxWidth: {
     maxWidth: '500px',
+  },
+  cardWidth: {
+    width: '300px',
+  },
+  imageShadow: {
+    filter: tokens.elevate,
   },
   iconStyles: {
     width: 'min(12vw, 128px)',
@@ -84,30 +91,30 @@ const Home: NextPage = () => {
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Image width="325" height="585" src="image/feedback-demo.gif" />
           <Stack vertical>
-            <Header1>Super-charge your customer return rate ⚡</Header1>
+            <Header1>How we do it</Header1>
             <Body className={styles.textMaxWidth} size={500}>
-              Post-purchase feedback requests have the highest open and click rates of any customer interaction, but 75%
-              of customers never re-buy.
+              1. A week after the product order, the customer receives a feedback survey through an email or SMS
+              message.
             </Body>
             <Body className={styles.textMaxWidth} size={500}>
-              Pongo fixes this by turning feedback into personalized product recommendations that can be purchased in
-              one click.
+              2. The customer fills out the feedback survey.
+            </Body>
+            <Body className={styles.textMaxWidth} size={500}>
+              3. They are recommended products based on their feedback and past orders.
             </Body>
           </Stack>
         </Stack>
         <Divider />
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Stack vertical>
-            <Header1>Intelligent cross-sells 🧠</Header1>
+            <Header1>Easily collect feedback</Header1>
             <Body className={styles.textMaxWidth} size={500}>
-              Our advanced recommendation system combines the customer's feedback with their purchase history, to serve
-              up personalized product recommendations.
+              Our feedback interface is intuitive for customers.
+            </Body>
+            <Body className={styles.textMaxWidth} size={500}>
+              Giving feedback on a product has never been easier.
             </Body>
           </Stack>
-          <Image width="316px" height="300px" src="image/increase-sales.png" />
-        </Stack>
-        <Divider />
-        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Card inline>
             <CardHeader header={<Header2>Printed Tote Bag</Header2>} />
             <Stack horizontalAlignment="center">
@@ -126,19 +133,37 @@ const Home: NextPage = () => {
               <ToggleButton shape="circular">Packaging</ToggleButton>
               <ToggleButton shape="circular">Price</ToggleButton>
             </Stack>
-            <Button color="brand" appearance="primary">
-              Submit
-            </Button>
+          </Card>
+        </Stack>
+        <Divider />
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+          <Card className={styles.cardWidth}>
+            <Stack horizontalAlignment="center">
+              <Image src={'image/suggestion-bag.png'} width="250px" height="250px" className={styles.imageShadow} />
+            </Stack>
+            <CardHeader header={<Header3>Leather Bag</Header3>} />
+            <SubHeadline>$300</SubHeadline>
+            <Button>Add to cart</Button>
           </Card>
           <Stack vertical>
-            <Header1>An interface built for conversions 📈</Header1>
+            <Header1>Supercharge sales</Header1>
             <Body className={styles.textMaxWidth} size={500}>
-              Our feedback interface is built from the ground up to be intuitive for customers to fill out.
-            </Body>
-            <Body className={styles.textMaxWidth} size={500}>
-              We strive to make this workflow as easy as possible.
+              Boost your sales through personalized product recommendations.
             </Body>
           </Stack>
+        </Stack>
+        <Divider />
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+          <Stack vertical>
+            <Header1>Smart recommendations</Header1>
+            <Body className={styles.textMaxWidth} size={500}>
+              Our recommendation algorithm merges customer feedback with purchase history.
+            </Body>
+            <Body className={styles.textMaxWidth} size={500}>
+              The result is highly engaging product recommendations.
+            </Body>
+          </Stack>
+          <Image width="316px" height="300px" src="image/increase-sales.png" />
         </Stack>
       </Container>
       <Divider />
