@@ -18,13 +18,18 @@ import {
   SubHeadline,
   InstagramIcon,
   LogoIcon,
+  TabList,
+  Tab,
   Divider,
   tokens,
 } from '@pongo-ui/react-components';
+import type { TabListProps } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import { ContactForm, LandingToolbar } from '../components';
+import { Canvas } from '@react-three/fiber';
+import { Environment, ContactShadows, OrbitControls } from '@react-three/drei';
+import { ContactForm, LandingToolbar, Laptop } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
@@ -54,13 +59,21 @@ const useStyles = makeStyles({
     display: 'flex',
     flexGrow: '1',
   },
+  joinSection: {
+    backgroundColor: tokens.inheritForegroundHover,
+  },
 });
 
 const Home: NextPage = () => {
+  const [tabValue, setTabValue] = React.useState('1');
   const formRef = React.useRef<HTMLDivElement>(null);
   const styles = useStyles();
 
   const onButtonClick = () => window.scrollTo({ top: formRef?.current?.getBoundingClientRect().y });
+
+  const onTabValueChange: TabListProps['onTabSelect'] = (ev, data) => {
+    setTabValue(data.value as string);
+  };
 
   return (
     <>
@@ -89,19 +102,51 @@ const Home: NextPage = () => {
       </Container>
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Image width="325" height="585" src="image/feedback-demo.gif" />
+          <Canvas dpr={[1, 2]} camera={{ position: [-0, 0, -25], fov: 35 }} style={{ width: '530px', height: '585px' }}>
+            <pointLight position={[10, 10, 10]} intensity={1.5} />
+            <React.Suspense fallback={null}>
+              <group rotation={[0, Math.PI, 0]}>
+                <Laptop tabValue={tabValue} />
+              </group>
+              <Environment preset="forest" />
+            </React.Suspense>
+            <ContactShadows
+              rotation-x={Math.PI / 2}
+              position={[0, -4.5, 0]}
+              opacity={1}
+              width={20}
+              height={20}
+              blur={2}
+              far={4.5}
+            />
+            <OrbitControls
+              enablePan={false}
+              enableZoom={false}
+              minPolarAngle={Math.PI / 2}
+              maxPolarAngle={Math.PI / 2}
+            />
+          </Canvas>
+
+          {/* <div style={{ width: '325px', height: '585px' }} /> */}
           <Stack vertical>
             <Header1>How we do it</Header1>
-            <Body className={styles.textMaxWidth} size={500}>
-              1. A week after the product order, the customer receives a feedback survey through an email or SMS
-              message.
-            </Body>
-            <Body className={styles.textMaxWidth} size={500}>
-              2. The customer fills out the feedback survey.
-            </Body>
-            <Body className={styles.textMaxWidth} size={500}>
-              3. They are recommended products based on their feedback and past orders.
-            </Body>
+            <TabList selectedValue={tabValue} onTabSelect={onTabValueChange} vertical>
+              <Tab value="1">
+                <Body color={tabValue !== '1' ? 'inherit' : 'base'} className={styles.textMaxWidth} size={500}>
+                  Receive survey
+                </Body>
+              </Tab>
+              <Tab value="2">
+                <Body color={tabValue !== '2' ? 'inherit' : 'base'} className={styles.textMaxWidth} size={500}>
+                  Complete survey
+                </Body>
+              </Tab>
+              <Tab value="3">
+                <Body color={tabValue !== '3' ? 'inherit' : 'base'} className={styles.textMaxWidth} size={500}>
+                  Product recommendations
+                </Body>
+              </Tab>
+            </TabList>
           </Stack>
         </Stack>
         <Divider />
@@ -167,7 +212,13 @@ const Home: NextPage = () => {
         </Stack>
       </Container>
       <Divider />
-      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center" ref={formRef}>
+      <Container
+        className={styles.joinSection}
+        appearance="relaxed"
+        horizontalAlignment="center"
+        verticalAlignment="center"
+        ref={formRef}
+      >
         <Stack vertical horizontalAlignment="center">
           <Header1 align="center">Join the beta</Header1>
           <Body align="center">Free, but a limited space.</Body>
