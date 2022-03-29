@@ -4,13 +4,11 @@ import {
   Card,
   CardHeader,
   Container,
-  Button,
   Stack,
   Header1,
   RadioGroup,
   Radio,
   SubHeadline,
-  Divider,
 } from '@pongo-ui/react-components';
 import Image from 'next/image';
 import { makeStyles } from '@griffel/react';
@@ -31,7 +29,7 @@ export const CompleteSurvey = () => {
   return (
     <Container appearance="relaxed" horizontalAlignment="center">
       <Stack vertical horizontalAlignment="center">
-        <Header1 align="center">Thanks for your purchase at Pongo!</Header1>
+        <Header1 align="center">Thanks for your purchase!</Header1>
         <SubHeadline align="center">Did you like this item?</SubHeadline>
       </Stack>
       <Stack horizontalAlignment="center">
@@ -47,12 +45,6 @@ export const CompleteSurvey = () => {
             </RadioGroup>
           </Stack>
         </Card>
-      </Stack>
-      <Divider />
-      <Stack horizontalAlignment="center" grow>
-        <Button className={styles.buttonStyles} color="brand" appearance="primary" size="large">
-          Submit
-        </Button>
       </Stack>
     </Container>
   );

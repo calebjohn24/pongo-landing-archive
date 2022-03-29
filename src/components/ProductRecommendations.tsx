@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Link,
   Card,
   CartIcon,
   SubHeadline,
@@ -46,7 +45,6 @@ export const ProductRecommendations = () => {
           Submit to checkout
         </Button>
       </Stack>
-      <Link>View more products</Link>
     </Container>
   );
 };

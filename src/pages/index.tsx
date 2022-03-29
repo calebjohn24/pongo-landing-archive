@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   Container,
-  Card,
   CardHeader,
   Display,
   Stack,
@@ -22,14 +21,13 @@ import {
   Tab,
   Divider,
   tokens,
+  Card,
 } from '@pongo-ui/react-components';
 import type { TabListProps } from '@pongo-ui/react-components';
 import { makeStyles } from '@griffel/react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import { Canvas } from '@react-three/fiber';
-import { Environment, ContactShadows, OrbitControls } from '@react-three/drei';
-import { ContactForm, LandingToolbar, Phone } from '../components';
+import { ContactForm, LandingToolbar, ReceiveSurvey, CompleteSurvey, ProductRecommendations } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
@@ -41,6 +39,10 @@ const useStyles = makeStyles({
   },
   textMaxWidth: {
     maxWidth: '500px',
+  },
+  wrapper: {
+    width: '352px',
+    height: '575px',
   },
   cardWidth: {
     width: '300px',
@@ -106,30 +108,9 @@ const Home: NextPage = () => {
       </Container>
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Canvas dpr={[1, 2]} camera={{ position: [-0, 0, -25], fov: 35 }} style={{ width: '530px', height: '585px' }}>
-            <pointLight position={[10, 10, 10]} intensity={1.5} />
-            <React.Suspense fallback={null}>
-              <group rotation={[0, Math.PI, 0]}>
-                <Phone tabValue={tabValue} />
-              </group>
-              <Environment preset="forest" />
-            </React.Suspense>
-            <ContactShadows
-              rotation-x={Math.PI / 2}
-              position={[0, -4.5, 0]}
-              opacity={1}
-              width={20}
-              height={20}
-              blur={2}
-              far={4.5}
-            />
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              minPolarAngle={Math.PI / 2}
-              maxPolarAngle={Math.PI / 2}
-            />
-          </Canvas>
+          <div className={styles.wrapper}>
+            {tabValue === '1' ? <ReceiveSurvey /> : tabValue === '2' ? <CompleteSurvey /> : <ProductRecommendations />}
+          </div>
           <Stack vertical>
             <Header1>How we do it</Header1>
             <TabList selectedValue={tabValue} onTabSelect={onTabValueChange} vertical>
