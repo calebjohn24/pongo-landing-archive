@@ -29,7 +29,7 @@ import Image from 'next/image';
 import type { NextPage } from 'next';
 import { Canvas } from '@react-three/fiber';
 import { Environment, ContactShadows, OrbitControls } from '@react-three/drei';
-import { ContactForm, LandingToolbar, Laptop } from '../components';
+import { ContactForm, LandingToolbar, Phone } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
@@ -47,6 +47,10 @@ const useStyles = makeStyles({
   },
   imageShadow: {
     filter: tokens.elevate,
+  },
+  canvas: {
+    width: '530px',
+    height: '585px',
   },
   iconStyles: {
     width: 'min(12vw, 128px)',
@@ -106,7 +110,7 @@ const Home: NextPage = () => {
             <pointLight position={[10, 10, 10]} intensity={1.5} />
             <React.Suspense fallback={null}>
               <group rotation={[0, Math.PI, 0]}>
-                <Laptop tabValue={tabValue} />
+                <Phone tabValue={tabValue} />
               </group>
               <Environment preset="forest" />
             </React.Suspense>
@@ -126,8 +130,6 @@ const Home: NextPage = () => {
               maxPolarAngle={Math.PI / 2}
             />
           </Canvas>
-
-          {/* <div style={{ width: '325px', height: '585px' }} /> */}
           <Stack vertical>
             <Header1>How we do it</Header1>
             <TabList selectedValue={tabValue} onTabSelect={onTabValueChange} vertical>

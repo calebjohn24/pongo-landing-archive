@@ -19,8 +19,8 @@ export const ReceiveSurvey = () => {
   const styles = useStyles();
 
   return (
-    <Container appearance="relaxed">
-      <Stack grow vertical appearance="relaxed">
+    <Container horizontalAlignment="center">
+      <Stack grow vertical appearance="relaxed" horizontalAlignment="center">
         <Stack grow vertical>
           <div>
             <CardHeader
@@ -36,8 +36,8 @@ export const ReceiveSurvey = () => {
           <Divider className={styles.mainStyles} />
           <Stack className={styles.mainStyles} grow vertical>
             <Body>Thanks for purchasing at Pongo!</Body>
-            <Body>Please take a second to review your purchase.</Body>
-            <Image src={'image/bag.png'} width="100px" height="100px" />
+            <Body>Please take a second to write a review.</Body>
+            <Image src={'image/bag.png'} width="250px" height="250px" />
           </Stack>
         </Stack>
       </Stack>
