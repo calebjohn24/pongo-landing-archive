@@ -1,33 +1,18 @@
 import * as React from 'react';
 import {
   Container,
-  CardHeader,
   Display,
   Stack,
-  Body,
   Header1,
   Header2,
-  Header3,
-  RadioGroup,
-  Radio,
-  LinkedinIcon,
-  TwitterIcon,
-  ToggleButton,
   Button,
   SubHeadline,
-  InstagramIcon,
-  LogoIcon,
-  TabList,
-  Tab,
   Divider,
   tokens,
   Card,
-  Carousel,
   Title,
 } from '@pongo-ui/react-components';
-import type { TabListProps } from '@pongo-ui/react-components';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
-import Image from 'next/image';
 import type { NextPage } from 'next';
 import { Toolbar, Footer, ContactForm } from '../components';
 
