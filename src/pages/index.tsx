@@ -76,19 +76,13 @@ const Home: NextPage = () => {
         horizontalAlignment="start"
         verticalAlignment="center"
       >
-        <Display className={styles.displayMaxWidth} color="white" align="start">
+        <Display className={styles.displayMaxWidth} color="white">
           Build your store and presence lighting quick ⚡️
         </Display>
-        <SubHeadline color="white" align="center">
-          Payments, inventory, and SMS marketing built-in.
-        </SubHeadline>
+        <SubHeadline color="white">Payments, inventory, and SMS marketing built-in.</SubHeadline>
         <Stack vertical>
-          <SubHeadline color="white" align="center">
-            Go be you.
-          </SubHeadline>
-          <SubHeadline color="white" align="center">
-            Let us handle the rest.
-          </SubHeadline>
+          <SubHeadline color="white">Go be you.</SubHeadline>
+          <SubHeadline color="white">Let us handle the rest.</SubHeadline>
         </Stack>
         <Stack vertical horizontalAlignment="center">
           <Button onClick={onButtonClick} size="large" appearance="primary" color="brand">
@@ -112,7 +106,7 @@ const Home: NextPage = () => {
           <Stack>
             <Header2 nowrap>Depop + Paypal</Header2>
             <div className={styles.grow} />
-            <Header2 nowrap>13.49% + $0.50 🤮</Header2>
+            <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
           <Stack>
