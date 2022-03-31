@@ -86,7 +86,7 @@ const Home: NextPage = () => {
         </Stack>
         <Stack vertical horizontalAlignment="center">
           <Button onClick={onButtonClick} size="large" appearance="primary" color="brand">
-            Join the waiting list
+            Join the waitlist
           </Button>
         </Stack>
       </Container>
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
         ref={formRef}
       >
         <Stack vertical horizontalAlignment="center">
-          <Header1 align="center">Join the beta</Header1>
+          <Header1 align="center">Join the waitlist</Header1>
         </Stack>
         <ContactForm />
       </Container>
