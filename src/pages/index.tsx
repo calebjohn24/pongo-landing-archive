@@ -106,7 +106,7 @@ const Home: NextPage = () => {
       <Divider /> */}
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
-          No monthly fees, commissions more like 🐁 and less like ⛰️
+          3x the features at 1/3 the cost
         </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
