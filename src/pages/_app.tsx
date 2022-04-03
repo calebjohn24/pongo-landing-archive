@@ -50,7 +50,7 @@ export default function App(props: AppProps & { renderer: any }) {
       <Head>
         <title>Pongo</title>
         <meta name="title" content="Pongo" />
-        <meta name="description" content="The easiest way to create post-purchase surveys and increase your sales." />
+        <meta name="description" content="The easiest way to build and launch an e-commerce business" />
         <link rel="icon" type="image/svg+xml" href="/image/favicon.svg" />
       </Head>
       <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
