@@ -86,7 +86,7 @@ const Home: NextPage = () => {
           Start selling online in a flash ⚡️
         </Display>
         <SubHeadline color="white">
-          Pongo lets you design and manage your own e-commerce business from your phone
+          Pongo lets you build and manage your own e-commerce business from your phone
         </SubHeadline>
         <Stack vertical>
           <SubHeadline color="white">Payments, shipping, inventory, and marketing tools built-in.</SubHeadline>
