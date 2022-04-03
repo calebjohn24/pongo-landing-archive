@@ -109,7 +109,7 @@ const Home: NextPage = () => {
       <Divider /> */}
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
-          More features, fewer fees
+          More features, less fees
         </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
