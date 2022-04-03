@@ -53,10 +53,16 @@ const useStyles = makeStyles({
       backgroundColor: tokens.brand,
     },
   },
+  etsySlider: {
+    ':after': {
+      width: '9.4%',
+      backgroundColor: tokens.brand,
+    },
+  },
   pongoSlider: {
     ':after': {
       width: '5%',
-      backgroundColor: tokens.brand,
+      backgroundColor: tokens.success,
     },
   },
 });
@@ -77,10 +83,13 @@ const Home: NextPage = () => {
         verticalAlignment="center"
       >
         <Display className={styles.displayMaxWidth} color="white">
-          Build your store and presence lighting quick ⚡️
+          Start selling online in a flash ⚡️
         </Display>
-        <SubHeadline color="white">Payments, inventory, and SMS marketing built-in.</SubHeadline>
+        <SubHeadline color="white">
+          Pongo lets you build and manage your own e-commerce business from your phone
+        </SubHeadline>
         <Stack vertical>
+          <SubHeadline color="white">Payments, shipping, inventory, and marketing tools built-in.</SubHeadline>
           <SubHeadline color="white">Go be you.</SubHeadline>
           <SubHeadline color="white">Let us handle the rest.</SubHeadline>
         </Stack>
@@ -100,7 +109,7 @@ const Home: NextPage = () => {
       <Divider /> */}
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
-          3x the features at 1/3 the cost
+          More features, less fees
         </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
@@ -109,6 +118,12 @@ const Home: NextPage = () => {
             <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
+          <Stack>
+            <Header2 nowrap>Etsy</Header2>
+            <div className={styles.grow} />
+            <Header2 nowrap>9.4% + $0.30 😭</Header2>
+          </Stack>
+          <div className={mergeClasses(styles.slider, styles.etsySlider)} />
           <Stack>
             <Header2 nowrap>Pongo</Header2>
             <div className={styles.grow} />
