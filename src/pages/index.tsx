@@ -89,7 +89,7 @@ const Home: NextPage = () => {
           Pongo lets you build and manage your own e-commerce business from your phone
         </SubHeadline>
         <Stack vertical>
-          <SubHeadline color="white">Payments, shipping, inventory, and marketing tools built-in.</SubHeadline>
+          <SubHeadline color="white">Payments, shipping, inventory, SEO and marketing tools built-in.</SubHeadline>
           <SubHeadline color="white">Go be you.</SubHeadline>
           <SubHeadline color="white">Let us handle the rest.</SubHeadline>
         </Stack>
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
       <Divider /> */}
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
-          More features, less fees
+          More features, fewer fees
         </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
         ref={formRef}
       >
         <Stack vertical horizontalAlignment="center">
-          <Header1 align="center">Join the waitlist</Header1>
+          <Header1 align="center">Join the waitlist (limited space)</Header1>
         </Stack>
         <ContactForm />
       </Container>

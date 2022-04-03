@@ -25,10 +25,11 @@ const validateEmail = (inputEmail: string) => {
 export const ContactForm = () => {
   const styles = useStyles();
   const [email, updateEmail] = React.useState('');
+  const [ig, updateIg] = React.useState('');
   const helperTextId = useId('input-label');
   const [emailError, updateEmailError] = React.useState(false);
   const [state, handleSubmit] = useForm('xvolboby', {
-    data: { emailField: email },
+    data: { emailField: email, igField: ig },
   });
 
   /**
@@ -40,14 +41,24 @@ export const ContactForm = () => {
   };
 
   /**
+   * Callback to update the controlled email value.
+   */
+  const handleUpdateIg: InputProps['onChange'] = ev => {
+    updateIg(ev.target.value);
+    updateEmailError(false);
+  };
+
+  /**
    * Callback to attempt to submit the form if it is valid.
    */
   const trySubmit = async (ev: React.FormEvent) => {
     ev.preventDefault();
 
-    // The email is invalid update state
-    if (!validateEmail(email)) {
-      updateEmailError(true);
+    if (ig.length == 0) {
+      // The email is invalid update state
+      if (!validateEmail(email)) {
+        updateEmailError(true);
+      }
     }
 
     // The email is valid, submit it.
@@ -77,11 +88,23 @@ export const ContactForm = () => {
               value={email}
               onChange={handleUpdateEmail}
               danger={emailError}
-              label="Email *"
+              label="Email"
               placeholder="Enter you email"
               type="email"
               name="email"
-              required
+              input={{ 'aria-describedby': helperTextId }}
+            />
+            <Text className={styles.textMaxWidth} size={500} align="center">
+              or{' '}
+            </Text>
+            <Input
+              value={ig}
+              onChange={handleUpdateIg}
+              danger={emailError}
+              label="Instagram"
+              placeholder="Instagram handle"
+              type="text"
+              name="instagram"
               input={{ 'aria-describedby': helperTextId }}
             />
             <Button appearance="primary" color="brand" type="submit" disabled={state.submitting}>
