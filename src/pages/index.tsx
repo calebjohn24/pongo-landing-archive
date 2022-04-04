@@ -137,7 +137,9 @@ const Home: NextPage = () => {
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Title className={styles.textMaxWidth}>More features, less fees</Title>
+        <Title className={styles.textMaxWidth} align="center">
+          More features, less fees
+        </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
             <Header2 nowrap>Depop + Paypal</Header2>
