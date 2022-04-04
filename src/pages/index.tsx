@@ -109,7 +109,7 @@ const Home: NextPage = () => {
           </Card>
           <Stack vertical>
             <Title align="center">Build a store in 5 minutes</Title>
-            <Title align="center">On your phone</Title>
+            <Title align="center">on your phone</Title>
           </Stack>
         </Stack>
       </Container>
