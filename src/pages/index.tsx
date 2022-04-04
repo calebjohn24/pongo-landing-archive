@@ -171,7 +171,7 @@ const Home: NextPage = () => {
       >
         <Stack vertical horizontalAlignment="center">
           <Header1 align="center">Join the waitlist (limited space)</Header1>
-          <Body>Please provide at least one method of contact.</Body>
+          <Body>Please provide a method of contact.</Body>
         </Stack>
         <ContactForm />
       </Container>
