@@ -15,6 +15,7 @@ import {
 } from '@pongo-ui/react-components';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import { Toolbar, Footer, ContactForm } from '../components';
 
 const useStyles = makeStyles({
@@ -103,8 +104,32 @@ const Home: NextPage = () => {
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Title align="center">Start selling in 5 minutes.</Title>
-          <Card>Content Here</Card>
+          <Card>
+            <Image src="/image/store.png" width="208px" height="453px" />
+          </Card>
+          <Stack vertical>
+            <Title align="center">Build a store in 5 minutes</Title>
+            <Title align="center">On your phone</Title>
+          </Stack>
+        </Stack>
+      </Container>
+      <Divider />
+
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+          <Title align="center">Easily manage payments</Title>
+          <Card>
+            <Image src="/image/payments.png" width="208px" height="453px" />
+          </Card>
+        </Stack>
+      </Container>
+      <Divider />
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+          <Card>
+            <Image src="/image/orders.png" width="208px" height="453px" />
+          </Card>
+          <Title align="center">View orders</Title>
         </Stack>
       </Container>
       <Divider />
