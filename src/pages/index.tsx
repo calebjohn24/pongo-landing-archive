@@ -10,6 +10,7 @@ import {
   Divider,
   tokens,
   Card,
+  Body,
   Title,
 } from '@pongo-ui/react-components';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
@@ -100,13 +101,13 @@ const Home: NextPage = () => {
         </Stack>
       </Container>
       <Divider />
-      {/* <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Title align="center">Start selling in 5 minutes.</Title>
           <Card>Content Here</Card>
         </Stack>
       </Container>
-      <Divider /> */}
+      <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
           More features, less fees
@@ -142,6 +143,7 @@ const Home: NextPage = () => {
       >
         <Stack vertical horizontalAlignment="center">
           <Header1 align="center">Join the waitlist (limited space)</Header1>
+          <Body>Please provide at least one method of contact.</Body>
         </Stack>
         <ContactForm />
       </Container>

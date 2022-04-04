@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Provider, webLightTheme, webDarkTheme } from '@pongo-ui/react-components';
+import { Provider, webLightTheme, webDarkTheme, tokens } from '@pongo-ui/react-components';
 import { useLocalDefault, useThemeDetector, useGetLocal } from '../utils';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -67,6 +67,11 @@ export default function App(props: AppProps & { renderer: any }) {
           `,
         }}
       />
+      <style jsx global>{`
+        body {
+          background-color: ${theme.canvasColor};
+        }
+      `}</style>
       <RendererProvider renderer={renderer || createDOMRenderer()}>
         <SSRProvider>
           <AppProvider value={{ setTheme, findTheme }}>
