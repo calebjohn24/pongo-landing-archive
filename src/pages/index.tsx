@@ -108,8 +108,8 @@ const Home: NextPage = () => {
             <Image src="/image/store.png" width="208px" height="453px" />
           </Card>
           <Stack vertical>
-            <Title align="center">Build a store in 5 minutes</Title>
-            <Title align="center">on your phone</Title>
+            <Title>Build a storefront in 5 minutes,</Title>
+            <Title>all from your phone</Title>
           </Stack>
         </Stack>
       </Container>
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
 
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Title align="center">Easily manage payments</Title>
+          <Title>Easily process payments</Title>
           <Card>
             <Image src="/image/payments.png" width="208px" height="453px" />
           </Card>
@@ -129,14 +129,15 @@ const Home: NextPage = () => {
           <Card>
             <Image src="/image/orders.png" width="208px" height="453px" />
           </Card>
-          <Title align="center">View orders</Title>
+          <Stack vertical>
+            <Title>Manage and ship orders</Title>
+            <Title>without leaving the app</Title>
+          </Stack>
         </Stack>
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Title className={styles.textMaxWidth} align="center">
-          More features, less fees
-        </Title>
+        <Title className={styles.textMaxWidth}>More features, less fees</Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
             <Header2 nowrap>Depop + Paypal</Header2>
