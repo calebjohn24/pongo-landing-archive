@@ -21,14 +21,14 @@ import { Toolbar, Footer, ContactForm } from '../components';
 const useStyles = makeStyles({
   mainSection: {
     backgroundColor: 'black',
-    minHeight: '90vh',
+    minHeight: '70vh',
   },
   displayMaxWidth: {
     maxWidth: '900px',
   },
   textMaxWidth: {
     width: '100%',
-    maxWidth: '570px',
+    maxWidth: '490px',
   },
   joinSection: {
     backgroundColor: tokens.inheritForegroundHover,
@@ -67,6 +67,9 @@ const useStyles = makeStyles({
       backgroundColor: tokens.success,
     },
   },
+  wrapReverse: {
+    flexWrap: 'wrap-reverse',
+  },
 });
 
 const Home: NextPage = () => {
@@ -103,35 +106,55 @@ const Home: NextPage = () => {
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack
+          className={styles.wrapReverse}
+          appearance="relaxed"
+          horizontalAlignment="center"
+          verticalAlignment="center"
+        >
           <Card>
-            <Image src="/image/store.png" width="208px" height="453px" />
+            <Image src="/image/store.png" width="270px" height="589px" />
           </Card>
           <Stack vertical>
-            <Title>Build a storefront in 5 minutes,</Title>
-            <Title>all from your phone</Title>
+            <Title className={styles.textMaxWidth}>Build a storefront in minutes, all from your phone</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Pongo is the newest storefront builder. We make owning your own e-commerce store cheap and simple.
+            </Body>
           </Stack>
         </Stack>
       </Container>
       <Divider />
-
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Title>Easily process payments</Title>
+          <Stack vertical>
+            <Title className={styles.textMaxWidth}>Easily process payments</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Process and analyze your customers payments using our app. We also provide analytical tools to track your
+              stores growth.
+            </Body>
+          </Stack>
           <Card>
-            <Image src="/image/payments.png" width="208px" height="453px" />
+            <Image src="/image/payments.png" width="270px" height="589px" />
           </Card>
         </Stack>
       </Container>
       <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack
+          className={styles.wrapReverse}
+          appearance="relaxed"
+          horizontalAlignment="center"
+          verticalAlignment="center"
+        >
           <Card>
-            <Image src="/image/orders.png" width="208px" height="453px" />
+            <Image src="/image/orders.png" width="270px" height="589px" />
           </Card>
           <Stack vertical>
-            <Title>Manage and ship orders</Title>
-            <Title>without leaving the app</Title>
+            <Title className={styles.textMaxWidth}>Manage and ship orders without leaving the app</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Managing your orders has never been easier. We provide a clean interface that quickly lets you keep track
+              of your customers and their purchases.
+            </Body>
           </Stack>
         </Stack>
       </Container>
