@@ -55,6 +55,12 @@ const useStyles = makeStyles({
       backgroundColor: tokens.brand,
     },
   },
+  shopifySlider: {
+    ':after': {
+      width: '2.9%',
+      backgroundColor: tokens.brand,
+    },
+  },
   pongoSlider: {
     ':after': {
       width: '5%',
@@ -78,24 +84,26 @@ const Home: NextPage = () => {
       <Container
         className={styles.mainSection}
         appearance="relaxed"
-        horizontalAlignment="start"
+        horizontalAlignment="center"
         verticalAlignment="center"
       >
-        <Display className={styles.displayMaxWidth} color="white">
-          Start selling online in a flash ⚡️
-        </Display>
-        <SubHeadline color="white">
-          Pongo lets you build and manage your own e-commerce business from your phone
-        </SubHeadline>
-        <Stack vertical>
-          <SubHeadline color="white">Payments, shipping, inventory, SEO and marketing tools built-in.</SubHeadline>
-          <SubHeadline color="white">Go be you.</SubHeadline>
-          <SubHeadline color="white">Let us handle the rest.</SubHeadline>
-        </Stack>
-        <Stack vertical horizontalAlignment="center">
-          <Button onClick={onButtonClick} size="large" appearance="primary" color="brand">
-            Join the waitlist
-          </Button>
+        <Stack appearance="relaxed" vertical>
+          <Display className={styles.displayMaxWidth} color="white">
+            Start selling online in a flash ⚡️
+          </Display>
+          <SubHeadline color="white">
+            Pongo lets you build and manage your own e-commerce business from your phone
+          </SubHeadline>
+          <Stack vertical>
+            <SubHeadline color="white">Payments, shipping, inventory, SEO and marketing tools built-in.</SubHeadline>
+            <SubHeadline color="white">Go be you.</SubHeadline>
+            <SubHeadline color="white">Let us handle the rest.</SubHeadline>
+          </Stack>
+          <Stack vertical horizontalAlignment="center">
+            <Button onClick={onButtonClick} size="large" appearance="primary" color="brand">
+              Join the waitlist
+            </Button>
+          </Stack>
         </Stack>
       </Container>
       <Divider />
@@ -164,6 +172,12 @@ const Home: NextPage = () => {
             <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
+          <Stack>
+            <Header2 nowrap>Shopify</Header2>
+            <div className={styles.grow} />
+            <Header2 nowrap>$29.99 / m + 2.9% + $0.30 😭</Header2>
+          </Stack>
+          <div className={mergeClasses(styles.slider, styles.shopifySlider)} />
           <Stack>
             <Header2 nowrap>Pongo</Header2>
             <div className={styles.grow} />
