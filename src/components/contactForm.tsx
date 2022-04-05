@@ -102,7 +102,7 @@ export const ContactForm = () => {
                     onChange={handleUpdateEmail}
                     danger={emailError}
                     type="email"
-                    label="Email (optional)"
+                    label="Email"
                     placeholder="Enter you email"
                     name="email"
                     input={{ 'aria-describedby': helperTextId }}
@@ -117,7 +117,7 @@ export const ContactForm = () => {
                 <Input
                   value={ig}
                   onChange={handleUpdateIg}
-                  label="Instagram (optional)"
+                  label="Instagram"
                   placeholder="Enter your handle"
                   type="text"
                   name="instagram"

@@ -127,7 +127,7 @@ const Home: NextPage = () => {
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Stack vertical>
-            <Title className={styles.textMaxWidth}>Easily process payments</Title>
+            <Title className={styles.textMaxWidth}>Easily process payments and manage customer relations.</Title>
             <Body className={styles.textMaxWidth} size={500}>
               Process and analyze your customers payments using our app. We also provide analytical tools to track your
               stores growth.
