@@ -55,12 +55,6 @@ const useStyles = makeStyles({
       backgroundColor: tokens.brand,
     },
   },
-  etsySlider: {
-    ':after': {
-      width: '9.4%',
-      backgroundColor: tokens.brand,
-    },
-  },
   pongoSlider: {
     ':after': {
       width: '5%',
@@ -170,12 +164,6 @@ const Home: NextPage = () => {
             <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
-          <Stack>
-            <Header2 nowrap>Etsy</Header2>
-            <div className={styles.grow} />
-            <Header2 nowrap>9.4% + $0.30 😭</Header2>
-          </Stack>
-          <div className={mergeClasses(styles.slider, styles.etsySlider)} />
           <Stack>
             <Header2 nowrap>Pongo</Header2>
             <div className={styles.grow} />
