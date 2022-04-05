@@ -67,6 +67,11 @@ export default function App(props: AppProps & { renderer: any }) {
           `,
         }}
       />
+      <style jsx global>{`
+        body {
+          background-color: ${theme.canvasColor};
+        }
+      `}</style>
       <RendererProvider renderer={renderer || createDOMRenderer()}>
         <SSRProvider>
           <AppProvider value={{ setTheme, findTheme }}>

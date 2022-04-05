@@ -10,23 +10,25 @@ import {
   Divider,
   tokens,
   Card,
+  Body,
   Title,
 } from '@pongo-ui/react-components';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import { Toolbar, Footer, ContactForm } from '../components';
 
 const useStyles = makeStyles({
   mainSection: {
     backgroundColor: 'black',
-    minHeight: '90vh',
+    minHeight: '70vh',
   },
   displayMaxWidth: {
     maxWidth: '900px',
   },
   textMaxWidth: {
     width: '100%',
-    maxWidth: '570px',
+    maxWidth: '490px',
   },
   joinSection: {
     backgroundColor: tokens.inheritForegroundHover,
@@ -53,17 +55,14 @@ const useStyles = makeStyles({
       backgroundColor: tokens.brand,
     },
   },
-  etsySlider: {
-    ':after': {
-      width: '9.4%',
-      backgroundColor: tokens.brand,
-    },
-  },
   pongoSlider: {
     ':after': {
       width: '5%',
       backgroundColor: tokens.success,
     },
+  },
+  wrapReverse: {
+    flexWrap: 'wrap-reverse',
   },
 });
 
@@ -100,13 +99,60 @@ const Home: NextPage = () => {
         </Stack>
       </Container>
       <Divider />
-      {/* <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-          <Title align="center">Start selling in 5 minutes.</Title>
-          <Card>Content Here</Card>
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack
+          className={styles.wrapReverse}
+          appearance="relaxed"
+          horizontalAlignment="center"
+          verticalAlignment="center"
+        >
+          <Card>
+            <Image src="/image/store.png" width="270px" height="589px" />
+          </Card>
+          <Stack vertical>
+            <Title className={styles.textMaxWidth}>Build a storefront in minutes, all from your phone</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Pongo is the newest storefront builder. We make owning your own e-commerce store cheap and simple.
+            </Body>
+          </Stack>
         </Stack>
       </Container>
-      <Divider /> */}
+      <Divider />
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+          <Stack vertical>
+            <Title className={styles.textMaxWidth}>Easily process payments and manage customer relations.</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Process and analyze your customers payments using our app. We also provide analytical tools to track your
+              stores growth.
+            </Body>
+          </Stack>
+          <Card>
+            <Image src="/image/payments.png" width="270px" height="589px" />
+          </Card>
+        </Stack>
+      </Container>
+      <Divider />
+      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
+        <Stack
+          className={styles.wrapReverse}
+          appearance="relaxed"
+          horizontalAlignment="center"
+          verticalAlignment="center"
+        >
+          <Card>
+            <Image src="/image/orders.png" width="270px" height="589px" />
+          </Card>
+          <Stack vertical>
+            <Title className={styles.textMaxWidth}>Manage and ship orders without leaving the app</Title>
+            <Body className={styles.textMaxWidth} size={500}>
+              Managing your orders has never been easier. We provide a clean interface that quickly lets you keep track
+              of your customers and their purchases.
+            </Body>
+          </Stack>
+        </Stack>
+      </Container>
+      <Divider />
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Title className={styles.textMaxWidth} align="center">
           More features, less fees
@@ -118,12 +164,6 @@ const Home: NextPage = () => {
             <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
-          <Stack>
-            <Header2 nowrap>Etsy</Header2>
-            <div className={styles.grow} />
-            <Header2 nowrap>9.4% + $0.30 😭</Header2>
-          </Stack>
-          <div className={mergeClasses(styles.slider, styles.etsySlider)} />
           <Stack>
             <Header2 nowrap>Pongo</Header2>
             <div className={styles.grow} />
@@ -142,6 +182,7 @@ const Home: NextPage = () => {
       >
         <Stack vertical horizontalAlignment="center">
           <Header1 align="center">Join the waitlist (limited space)</Header1>
+          <Body>Please provide a method of contact.</Body>
         </Stack>
         <ContactForm />
       </Container>
