@@ -57,7 +57,7 @@ const useStyles = makeStyles({
   },
   shopifySlider: {
     ':after': {
-      width: '2.9%',
+      width: '20%',
       backgroundColor: tokens.brand,
     },
   },
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
           <Stack vertical>
             <Title className={styles.textMaxWidth}>Build a storefront in minutes, all from your phone</Title>
             <Body className={styles.textMaxWidth} size={500}>
-              Pongo is the newest storefront builder. We make owning your own e-commerce store cheap and simple.
+              Pongo is the enables users to build, operate, and scale your e-commerce business all from their phone.
             </Body>
           </Stack>
         </Stack>
@@ -129,35 +129,15 @@ const Home: NextPage = () => {
       <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
         <Stack appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
           <Stack vertical>
-            <Title className={styles.textMaxWidth}>Easily process payments and manage customer relations.</Title>
+            <Title className={styles.textMaxWidth}>Shipping Made Easy</Title>
             <Body className={styles.textMaxWidth} size={500}>
-              Process and analyze your customers payments using our app. We also provide analytical tools to track your
-              stores growth.
+              Pongo automatically caluclates shipping costs and takes the hassle out of shipping. With us shipping
+              orders to customers is as simple as printing out a label and dropping off your package.
             </Body>
           </Stack>
-          <Card>
-            <Image src="/image/payments.png" width="270px" height="589px" />
-          </Card>
-        </Stack>
-      </Container>
-      <Divider />
-      <Container appearance="relaxed" horizontalAlignment="center" verticalAlignment="center">
-        <Stack
-          className={styles.wrapReverse}
-          appearance="relaxed"
-          horizontalAlignment="center"
-          verticalAlignment="center"
-        >
           <Card>
             <Image src="/image/orders.png" width="270px" height="589px" />
           </Card>
-          <Stack vertical>
-            <Title className={styles.textMaxWidth}>Manage and ship orders without leaving the app</Title>
-            <Body className={styles.textMaxWidth} size={500}>
-              Managing your orders has never been easier. We provide a clean interface that quickly lets you keep track
-              of your customers and their purchases.
-            </Body>
-          </Stack>
         </Stack>
       </Container>
       <Divider />
@@ -167,17 +147,17 @@ const Home: NextPage = () => {
         </Title>
         <Card className={styles.textMaxWidth}>
           <Stack>
+            <Header2 nowrap>Shopify</Header2>
+            <div className={styles.grow} />
+            <Header2 nowrap>$29.99 / mo + 2.9% 😭</Header2>
+          </Stack>
+          <div className={mergeClasses(styles.slider, styles.shopifySlider)} />
+          <Stack>
             <Header2 nowrap>Depop + Paypal</Header2>
             <div className={styles.grow} />
             <Header2 nowrap>13.49% + $0.50 😭</Header2>
           </Stack>
           <div className={mergeClasses(styles.slider, styles.depopSlider)} />
-          <Stack>
-            <Header2 nowrap>Shopify</Header2>
-            <div className={styles.grow} />
-            <Header2 nowrap>$29.99 / m + 2.9% + $0.30 😭</Header2>
-          </Stack>
-          <div className={mergeClasses(styles.slider, styles.shopifySlider)} />
           <Stack>
             <Header2 nowrap>Pongo</Header2>
             <div className={styles.grow} />
@@ -196,7 +176,7 @@ const Home: NextPage = () => {
       >
         <Stack vertical horizontalAlignment="center">
           <Header1 align="center">Join the waitlist (limited space)</Header1>
-          <Body>Please provide a method of contact.</Body>
+          <Body>Sign up with your email or instagram</Body>
         </Stack>
         <ContactForm />
       </Container>
