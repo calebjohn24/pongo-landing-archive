@@ -120,7 +120,7 @@ const Home: NextPage = () => {
           <Stack vertical>
             <Title className={styles.textMaxWidth}>Build a storefront in minutes, all from your phone</Title>
             <Body className={styles.textMaxWidth} size={500}>
-              Pongo is the enables users to build, operate, and scale your e-commerce business all from their phone.
+              Pongo is a store builder that enables users to create, operate, and scale e-commerce businesses all from their phones.
             </Body>
           </Stack>
         </Stack>
@@ -131,8 +131,7 @@ const Home: NextPage = () => {
           <Stack vertical>
             <Title className={styles.textMaxWidth}>Shipping Made Easy</Title>
             <Body className={styles.textMaxWidth} size={500}>
-              Pongo automatically caluclates shipping costs and takes the hassle out of shipping. With us shipping
-              orders to customers is as simple as printing out a label and dropping off your package.
+              Pongo automatically calculates shipping costs and takes the hassle out of getting orders to your customers. With us, it becomes as simple as printing out a label and dropping off your package.
             </Body>
           </Stack>
           <Card>
