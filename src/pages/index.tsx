@@ -131,8 +131,7 @@ const Home: NextPage = () => {
           <Stack vertical>
             <Title className={styles.textMaxWidth}>Shipping Made Easy</Title>
             <Body className={styles.textMaxWidth} size={500}>
-              Pongo automatically calculates shipping costs and takes the hassle out of shipping. With us shipping
-              orders to customers are as simple as printing out a label and dropping off your package.
+              Pongo automatically calculates shipping costs and takes the hassle out of getting orders to your customers. With us, it becomes as simple as printing out a label and dropping off your package.
             </Body>
           </Stack>
           <Card>
